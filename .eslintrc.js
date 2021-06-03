@@ -25,12 +25,10 @@ module.exports = {
     ],
     "rules": {
         "react/prop-types": "off",
-        "react/jsx-key": "off",
         "react/react-in-jsx-scope": "off",
         "react/jsx-no-target-blank": "off",
         "react/no-unescaped-entities": "off",
         "no-undef": "off",
-        "no-dupe-else-if": "off",
         "no-unreachable": "off",
         "react/jsx-no-undef": "off"
     }

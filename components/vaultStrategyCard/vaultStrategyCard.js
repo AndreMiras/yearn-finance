@@ -16,7 +16,7 @@ export default function vaultStrategyCard({ strategy, vault }) {
     } else if (name.includes('StrategyGenericLevCompFarm')) {
       return `This strategy supplies the ${tokens} on Compound and borrows an additional amount of the ${tokens} to maximize COMP farming. Flashloans are used to obtain additional ${tokens} from dYdX in order to gain additional leverage and boost the APY. Earned COMP is harvested and sold for more ${tokens} and re-deposited into the vault.`;
     } else if (name.includes('StrategyAH2Earncy')) {
-      return `Lends ${tokens} on Alpha Homora v2 to generate interest. Users of Alpha Homora borrow ${tokens} to perform leveraged yield-farming on Alpha’s platform.`;
+      return `Lends ${tokens} on Alpha Homora v2 to generate interest. Users of Alpha Homora borrow ${tokens} to perform leveraged yield-farming on Alpha Homora’s platform.`;
     } else if (name.includes('StrategyIdle')) {
       return `This strategy supplies ${tokens} on IDLE.finance to farm COMP and IDLE. Rewards are harvested, sold for more ${tokens}, and deposited back to the vault.`;
     } else if (name.includes('StrategyCurve') && name.includes('VoterProxy')) {
@@ -63,8 +63,6 @@ export default function vaultStrategyCard({ strategy, vault }) {
       return 'This strategy uses ETH to mint DAI at MakerDAO. This newly minted DAI is then deposited into the v2 DAI yVault.';
     } else if (name.includes('PoolTogether')) {
       return `Supplies ${tokens} to the PoolTogether protocol to farm POOL. Rewards are harvested, sold for more ${tokens}, and deposited back into the vault. If it gets the prize of the week it will also be added to the vault.`;
-    } else if (name.includes('StrategyAH2Earncy')) {
-      return `Lends ${tokens} on Alpha Homora v2 to generate interest. Users of Alpha Homora borrow ${tokens} to perform leveraged yield-farming on Alpha Homora’s platform.`;
     } else if (name.includes('SingleSidedCrv')) {
       return `Deposits ${tokens} to a ${tokens} curve pool on curve.fi, and switches to the most profitable curve pool.`;
     } else if (name.includes('StrategyCurveIBVoterProxy')) {

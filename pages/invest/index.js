@@ -462,7 +462,7 @@ function Invest({ changeTheme }) {
                 <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                   {topVaultPerformers.stableCoinVaults.length > 4 &&
                     topVaultPerformers.stableCoinVaults.slice(0, 3).map((vault, i) => (
-                      <li>
+                      <li key={i}>
                         <span style={{ fontSize: '25px' }}>
                           {i === 0 ? '🥇' : null}
                           {i === 1 ? '🥈' : null}
@@ -508,7 +508,7 @@ function Invest({ changeTheme }) {
                 <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                   {topVaultPerformers.ethBTCVaults.length > 4 &&
                     topVaultPerformers.ethBTCVaults.slice(0, 3).map((vault, i) => (
-                      <li>
+                      <li key={i}>
                         <span style={{ fontSize: '25px' }}>
                           {i === 0 ? '🥇' : null}
                           {i === 1 ? '🥈' : null}
@@ -555,7 +555,7 @@ function Invest({ changeTheme }) {
                   <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                     {topVaultPerformers.otherVaults.length > 4 &&
                       topVaultPerformers.otherVaults.slice(0, 3).map((vault, i) => (
-                        <li>
+                        <li key={i}>
                           <span style={{ fontSize: '25px' }}>
                             {i === 0 ? '🥇' : null}
                             {i === 1 ? '🥈' : null}

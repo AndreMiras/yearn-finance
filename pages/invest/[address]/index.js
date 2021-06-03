@@ -131,7 +131,7 @@ function Vault(props) {
           </div>
           {vault.strategies.map((strategy) => {
             return (
-              <React.Fragment>
+              <React.Fragment key={strategy.address}>
                 <div className={classes.separator}></div>
                 <div className={classes.overviewCard}>
                   <VaultStrategyCard strategy={strategy} vault={vault} />

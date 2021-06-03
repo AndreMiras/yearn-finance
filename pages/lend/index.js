@@ -303,7 +303,7 @@ function Lend({ changeTheme }) {
       <div className={classes.tooltipContainer}>
         {supplyAssets.map((asset) => {
           return (
-            <div className={classes.tooltipValue}>
+            <div className={classes.tooltipValue} key={asset.tokenMetadata.symbol}>
               <Typography className={classes.val}>{asset.tokenMetadata.symbol}</Typography>
               <Typography className={classes.valBold}>{formatCurrency(asset.supplyAPY)}%</Typography>
             </div>
@@ -318,7 +318,7 @@ function Lend({ changeTheme }) {
       <div className={classes.tooltipContainer}>
         {borrowAssets.map((asset) => {
           return (
-            <div className={classes.tooltipValue}>
+            <div className={classes.tooltipValue} key={asset.tokenMetadata.symbol}>
               <Typography className={classes.val}>{asset.tokenMetadata.symbol}</Typography>
               <Typography className={classes.valBold}>{formatCurrency(asset.borrowAPY)}%</Typography>
             </div>

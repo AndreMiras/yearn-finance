@@ -32,7 +32,7 @@ export default function GasSpeed({ setParentSpeed }) {
       stores.emitter.removeListener(GAS_PRICES_RETURNED, gasPricesReturned);
     };
 
-    dispatcher.dispatch(GET_GAS_PRICES);
+    stores.dispatcher.dispatch(GET_GAS_PRICES);
   }, []);
 
   return (
